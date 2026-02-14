@@ -14,7 +14,7 @@ const About = () => (
     <main>
       <section className="bg-hero-gradient py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-display text-3xl font-bold text-primary-foreground md:text-5xl">About JobPortal</h1>
+          <h1 className="font-display text-3xl font-bold text-primary-foreground md:text-5xl">About Evolve Solutions</h1>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/70">
             We're on a mission to transform how people find jobs and how companies find talent.
           </p>

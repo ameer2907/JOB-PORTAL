@@ -7,6 +7,8 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "Jobs", path: "/jobs" },
   { label: "Companies", path: "/companies" },
+  { label: "Services", path: "/services" },
+  { label: "Blog", path: "/blog" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];
@@ -23,20 +25,17 @@ const Navbar = () => {
             <Briefcase className="h-5 w-5 text-accent-foreground" />
           </div>
           <span className="font-display text-xl font-bold text-foreground">
-            Job<span className="text-gradient">Portal</span>
+            Evolve<span className="text-gradient"> Solutions</span>
           </span>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               className={`rounded-md px-3 py-2 text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.path
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                location.pathname === link.path ? "text-primary" : "text-muted-foreground"
               }`}
             >
               {link.label}
@@ -44,18 +43,17 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" size="sm">
-            Sign In
+        <div className="hidden items-center gap-3 lg:flex">
+          <Button asChild variant="ghost" size="sm">
+            <Link to="/login">Sign In</Link>
           </Button>
-          <Button size="sm" className="bg-accent-gradient text-accent-foreground hover:opacity-90">
-            Post a Job
+          <Button asChild size="sm" className="bg-accent-gradient text-accent-foreground hover:opacity-90">
+            <Link to="/post-job">Post a Job</Link>
           </Button>
         </div>
 
-        {/* Mobile toggle */}
         <button
-          className="md:hidden text-foreground"
+          className="lg:hidden text-foreground"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -63,9 +61,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
-        <div className="border-t border-border bg-card p-4 md:hidden animate-fade-in">
+        <div className="border-t border-border bg-card p-4 lg:hidden animate-fade-in">
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <Link
@@ -82,8 +79,12 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border pt-2">
-              <Button variant="ghost" size="sm">Sign In</Button>
-              <Button size="sm" className="bg-accent-gradient text-accent-foreground">Post a Job</Button>
+              <Button asChild variant="ghost" size="sm">
+                <Link to="/login" onClick={() => setOpen(false)}>Sign In</Link>
+              </Button>
+              <Button asChild size="sm" className="bg-accent-gradient text-accent-foreground">
+                <Link to="/post-job" onClick={() => setOpen(false)}>Post a Job</Link>
+              </Button>
             </div>
           </div>
         </div>
