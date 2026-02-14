@@ -28,7 +28,7 @@ const WhyChooseUs = () => (
     <div className="container mx-auto px-4">
       <div className="mb-12 text-center">
         <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-          Why Choose <span className="text-gradient">JobPortal</span>
+          Why Choose <span className="text-gradient">Evolve Solutions</span>
         </h2>
         <p className="mt-3 text-muted-foreground">Everything you need for a successful job search</p>
       </div>

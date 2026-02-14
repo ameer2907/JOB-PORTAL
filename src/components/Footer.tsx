@@ -10,7 +10,7 @@ const Footer = () => (
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-gradient">
               <Briefcase className="h-5 w-5 text-accent-foreground" />
             </div>
-            <span className="font-display text-xl font-bold">JobPortal</span>
+            <span className="font-display text-xl font-bold">Evolve Solutions</span>
           </Link>
           <p className="mt-3 text-sm leading-relaxed opacity-70">
             Connecting talent with opportunity. Find your dream job or the perfect candidate — all in one place.
@@ -22,18 +22,18 @@ const Footer = () => (
           <ul className="space-y-2 text-sm opacity-80">
             <li><Link to="/jobs" className="hover:opacity-100 transition-opacity">Browse Jobs</Link></li>
             <li><Link to="/companies" className="hover:opacity-100 transition-opacity">Companies</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Career Resources</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Salary Guide</Link></li>
+            <li><Link to="/blog" className="hover:opacity-100 transition-opacity">Career Resources</Link></li>
+            <li><Link to="/services" className="hover:opacity-100 transition-opacity">Salary Guide</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="mb-4 font-display text-sm font-semibold uppercase tracking-wider opacity-60">For Employers</h4>
           <ul className="space-y-2 text-sm opacity-80">
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Post a Job</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Pricing</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Recruiting Solutions</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Employer Branding</Link></li>
+            <li><Link to="/post-job" className="hover:opacity-100 transition-opacity">Post a Job</Link></li>
+            <li><Link to="/services" className="hover:opacity-100 transition-opacity">Pricing</Link></li>
+            <li><Link to="/services" className="hover:opacity-100 transition-opacity">Recruiting Solutions</Link></li>
+            <li><Link to="/about" className="hover:opacity-100 transition-opacity">Employer Branding</Link></li>
           </ul>
         </div>
 
@@ -42,14 +42,14 @@ const Footer = () => (
           <ul className="space-y-2 text-sm opacity-80">
             <li><Link to="/about" className="hover:opacity-100 transition-opacity">About Us</Link></li>
             <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
-            <li><Link to="/" className="hover:opacity-100 transition-opacity">Terms of Service</Link></li>
+            <li><Link to="/privacy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="hover:opacity-100 transition-opacity">Terms of Service</Link></li>
           </ul>
         </div>
       </div>
 
       <div className="mt-12 border-t border-navy-foreground/10 pt-8 text-center text-sm opacity-50">
-        © {new Date().getFullYear()} JobPortal. All rights reserved.
+        © {new Date().getFullYear()} Evolve Solutions. All rights reserved.
       </div>
     </div>
   </footer>
