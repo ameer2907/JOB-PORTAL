@@ -1,73 +1,192 @@
-# Welcome to your Lovable project
+Here is a clean, professional **README.md** you can copy and paste for your **Job Portal Application**.
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+# Job Portal Application
 
-## How can I edit this code?
+A modern full-stack Job Portal web application that connects job seekers with recruiters. The platform allows users to search and apply for jobs, while employers can post openings and manage applications through a professional dashboard.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+This application is designed to provide a complete recruitment solution with a clean corporate UI and smooth user experience. It supports multiple user roles and includes real-world features like resume upload, job filtering, authentication, and admin management.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Job Seeker
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* User registration and login
+* Create and update profile
+* Upload resume (PDF/DOC)
+* Search jobs by title, location, or category
+* Apply for jobs
+* Save/bookmark jobs
+* Track application status
 
-Follow these steps:
+### Recruiter / Employer
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Recruiter registration and login
+* Company profile management
+* Post new job openings
+* Edit or delete job posts
+* View applicants for each job
+* Download candidate resumes
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Admin
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Admin dashboard
+* Manage users
+* Manage job listings
+* Manage companies
+* View platform statistics
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## Core Modules
+
+* Home page with search and featured jobs
+* Job listing with filters
+* Job details page
+* Authentication system (JWT)
+* Resume file upload
+* Role-based access control
+* Responsive modern UI
+
+---
+
+## Tech Stack
+
+**Frontend**
+
+* React / Next.js
+* HTML, CSS, JavaScript
+* Tailwind CSS or Bootstrap
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* MongoDB (Mongoose)
+
+**Other**
+
+* JWT Authentication
+* Multer (File upload)
+* REST API architecture
+
+---
+
+## Installation & Setup
+
+### 1. Clone the Repository
+
+```
+git clone https://github.com/your-username/job-portal.git
+cd job-portal
+```
+
+---
+
+### 2. Backend Setup
+
+```
+cd backend
+npm install
+```
+
+Create a `.env` file:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+Run backend:
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Frontend Setup
 
-**Use GitHub Codespaces**
+Open a new terminal:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+cd frontend
+npm install
+npm start
+```
 
-## What technologies are used for this project?
+Frontend will run on:
 
-This project is built with:
+```
+http://localhost:3000
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Backend runs on:
 
-## How can I deploy this project?
+```
+http://localhost:5000
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Sample Workflow
 
-Yes, you can!
+1. User registers as Job Seeker or Recruiter
+2. Job Seeker searches and applies for jobs
+3. Recruiter posts jobs and views applicants
+4. Admin monitors system activity
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Screens (Expected)
+
+* Home Page with Job Search
+* Job Listing Page
+* Job Details Page
+* Login / Register
+* User Dashboard
+* Recruiter Dashboard
+* Admin Panel
+
+---
+
+## Future Enhancements
+
+* Email notifications
+* AI-based job recommendation
+* Chat between recruiter and candidate
+* Resume parsing
+* Analytics dashboard
+* Dark mode
+
+---
+
+## Use Case
+
+This project is suitable for:
+
+* Final year project
+* Portfolio project
+* Full-stack practice
+* Real-world recruitment system demo
+
+---
+
+## Author
+
+Ameer Malik Bahad
+CSE – Data Science & AI
+
+---
+
